@@ -9,6 +9,8 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: false,
         },
+        autoHideMenuBar: true,
+        icon: path.join(__dirname, 'public', 'icon.jpg'),
     });
 
     // Lancer le serveur Express (localhost:3000)
@@ -21,4 +23,18 @@ function createWindow() {
     }, 1000);
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+    createWindow()
+
+    app.on('activate', () => {
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow()
+        }
+    })
+})
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit()
+    }
+})

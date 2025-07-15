@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title><%= title %></title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <h1>BlackBox Toolkit</h1>
-  <p>Bienvenue dans ton interface cyber 💀</p>
-  <p>
-    <% if (typeof modules !== 'undefined' && modules) { %>
-      <%- modules.map(module => `<a href="${module.path}">${module.name}</a>`).join(", ") %>
-    <% } else { %>
-      No modules available
-    <% } %>
-  </p>
-  
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1 class="title">BlackBox Toolkit</h1>
+
+        <div class="modules">
+
+            <p>Modules disponibles:</p>
+            <ul class="module-list">
+                <% if (typeof modules !== 'undefined' && modules) { %>
+                <%- modules.map(module => `<li><a
+                        href="${module.path}">${module.name} -
+                        ${module.version}</a></li>`).join(", ") %>
+                <% } else { %>
+                <li>No modules available</li>
+                <% } %>
+            </ul>
+        </div>
+
+    </body>
 </html>
