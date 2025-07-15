@@ -13,3 +13,71 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Module container styles */
+.module-container {
+  background: #222;
+  border: 1px solid #0f0;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0f0;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  background: #333;
+  color: #0f0;
+  border: 1px solid #0f0;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.back-button {
+  margin-top: 2rem;
+}
+
+.back-button a {
+  color: #0f0;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0f0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.back-button a:hover {
+  background: #0f0;
+  color: #111;
+}
+
+/* Links styling */
+a {
+  color: #0f0;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
