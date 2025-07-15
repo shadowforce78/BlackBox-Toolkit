@@ -106,11 +106,101 @@ Pour toute question ou suggestion, contactez [planque.adam@gmail.com](mailto:pla
 
 ## 📝 TODO
 
-* [ ] Ajouter module Phishing Page Builder
-* [ ] Intégrer module Encrypted Chat complet
-* [ ] Ajouter authentification utilisateur locale
-* [ ] Ajouter logs et monitoring des modules
-* [ ] Créer interface dashboard avancée
+# ✅ TODO – Modules à intégrer dans BlackBox Toolkit
+
+> ⚠️ Tous les modules doivent fonctionner en local, être modulaires, et afficher leurs logs dans le dashboard.
+
+---
+
+## 🧩 Modules "Offensifs"
+
+- [ ] **Token Grabber Generator**
+  - Générateur de scripts (JS/Python) obfusqués
+  - Ciblage : Discord tokens, sessions locales, clipboard
+  - Options : crypter avec clé custom, export zip
+
+- [ ] **Phishing Page Builder**
+  - Choix de thème (Steam, Gmail, Discord…)
+  - Génération page HTML + serveur local listener
+  - Export zip avec nom aguicheur (`MonCV.html.zip`)
+
+- [ ] **Encrypted Chat**
+  - P2P ou WebSocket chiffré (AES/RSA)
+  - Auto-delete + option de clé externe
+  - Mode obfuscation (emoji, base64, etc.)
+
+- [ ] **Keylogger Simulator (JS)**
+  - Script à injecter dans pages locales
+  - Sauvegarde des frappes dans logs locaux
+  - Option d’activation / désactivation
+
+- [ ] **Payload Encoder / Decoder**
+  - Encode / decode :
+    - Base64 / hex / unicode / `String.fromCharCode`
+    - Obfuscation emoji / code inversé
+  - Interface simple + textarea
+
+- [ ] **Fake File Generator**
+  - Génère un `.pdf.exe` ou `.jpg.html` factice
+  - Personnalisation du nom et de l’icône
+  - Option auto-open ou dropper
+
+---
+
+## 🕵️‍♂️ Modules "Analyse & Sensibilisation"
+
+- [ ] **User Fingerprinting Tool**
+  - OS, navigateur, canvas, IP locale, résolution, timezone
+  - Rapport exportable
+
+- [ ] **Webhook Listener / Catcher**
+  - Serveur d’écoute pour fausses livraisons Discord, Slack
+  - Dashboard des données reçues en temps réel
+
+- [ ] **Link Preview Generator**
+  - Génère un lien raccourci piégé (phishing)
+  - Affiche la preview telle qu’elle serait sur Discord / WhatsApp
+
+---
+
+## 🛠️ Modules "Utilitaires"
+
+- [ ] **Port Scanner (local only)**
+  - Scan IP locale (LAN) ou 127.0.0.1
+  - Affichage des ports ouverts avec service associé
+
+- [ ] **Password Generator**
+  - Générateur custom (force, caractères, format)
+  - Option d’export .txt
+
+- [ ] **Obfuscation Viewer / Deobfuscator**
+  - Entrée de JS/Python obfusqué → tentative de nettoyage
+  - Mise en forme et analyse de code grabber connu
+
+---
+
+## 🧠 Modules bonus (pour + tard)
+
+- [ ] **Exploit Builder (PoC templates)**
+  - Génération de petits exploits HTML/PDF/JS
+  - À utiliser en local uniquement
+
+- [ ] **DNS Spoofing Local (simulé)**
+  - Faux serveur DNS local pour test d'URL détournée
+  - Simulation pédagogique
+
+- [ ] **Social Engineering Simulator**
+  - Générateur de scénarios : fausse conversation / faux formulaire / fake alert
+
+---
+
+> 🔧 Chaque module doit :
+> - Avoir sa propre route (`/module-name`)
+> - Être activable/désactivable depuis le dashboard
+> - Posséder un footer de contexte + bouton retour
+> - Logger ses actions dans un fichier `.log` ou un mini dashboard
+
+
 
 ---
 
