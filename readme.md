@@ -204,4 +204,4 @@ Pour toute question ou suggestion, contactez [planque.adam@gmail.com](mailto:pla
 
 ---
 
-*Développé avec ❤️ par \[SaumonDeLuxe]*
+*Développé avec ❤️ par SaumonDeLuxe*
