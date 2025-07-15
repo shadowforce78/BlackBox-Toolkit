@@ -23,6 +23,18 @@ function createWindow() {
     }, 1000);
 }
 
+function injectTest(){
+    // For each page loaded, inject a test button
+    const testButton = document.createElement('button');
+    testButton.innerText = 'Run Test';
+    testButton.onclick = () => {
+        // Logic to run the test
+        console.log('Running test...');
+    };
+    document.body.appendChild(testButton);
+}
+
+
 app.whenReady().then(() => {
     createWindow()
 
