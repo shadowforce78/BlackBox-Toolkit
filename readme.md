@@ -100,7 +100,7 @@ Merci de respecter la licence et l’éthique du projet.
 
 ## 📫 Contact
 
-Pour toute question ou suggestion, contactez \[[planque.adam@gmail.com](mailto:planque.adam@gmail.com)]
+Pour toute question ou suggestion, contactez [planque.adam@gmail.com](mailto:planque.adam@gmail.com)
 
 ---
 
