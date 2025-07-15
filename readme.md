@@ -1,5 +1,3 @@
-
-````markdown
 # BlackBox Toolkit
 
 > ⚠️ **Avertissement :**  
@@ -117,5 +115,3 @@ Pour toute question ou suggestion, contactez \[[planque.adam@gmail.com](mailto:p
 ---
 
 *Développé avec ❤️ par \[SaumonDeLuxe]*
-
-```
