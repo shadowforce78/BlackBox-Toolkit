@@ -8,6 +8,13 @@
 <body>
   <h1>BlackBox Toolkit</h1>
   <p>Bienvenue dans ton interface cyber 💀</p>
-  <button onclick="alert('Module coming soon...')">Test bouton</button>
+  <p>
+    <% if (typeof modules !== 'undefined' && modules) { %>
+      <%- modules.map(module => `<a href="${module.path}">${module.name}</a>`).join(", ") %>
+    <% } else { %>
+      No modules available
+    <% } %>
+  </p>
+  
 </body>
 </html>
