@@ -65,12 +65,12 @@ blackbox-toolkit/
 
 ## 📦 Modules actuels
 
-| Module                 | Description                                | Statut           |
-| ---------------------- | ------------------------------------------ | ---------------- |
-| TokenGrabber Generator | Génération de scripts de capture de tokens | À venir          |
-| Phishing Page Builder  | Génération de pages de phishing simulées   | À venir          |
-| Encrypted Chat         | Chat chiffré et obfusqué                   | À venir          |
-| ...                    | ...                                        | ...              |
+| Module                 | Description                                | Statut  |
+| ---------------------- | ------------------------------------------ | ------- |
+| TokenGrabber Generator | Génération de scripts de capture de tokens | À venir |
+| Phishing Page Builder  | Génération de pages de phishing simulées   | À venir |
+| Encrypted Chat         | Chat chiffré et obfusqué                   | À venir |
+| ...                    | ...                                        | ...     |
 
 ---
 
