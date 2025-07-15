@@ -29,9 +29,9 @@ function getModules() {
         const manifestPath = path.join(modulesDir, moduleName, 'manifest.json');
         if (fs.existsSync(manifestPath)) {
             const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-            return { name: manifest.name || moduleName, path: `/modules/${moduleName}`, version: manifest.version || '1.0.0' };
+            return { name: manifest.name || moduleName, path: `/modules/${moduleName}`, version: manifest.version || '1.0.0', description: manifest.description || 'No description available' };
         }
-        return { name: "Error manifest", path: `/modules/${moduleName}`, version: 'unknown' };
+        return { name: "Error manifest", path: `/modules/${moduleName}`, version: 'unknown', description: 'No manifest found' };
     });
 
 }

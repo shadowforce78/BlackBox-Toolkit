@@ -15,12 +15,25 @@
                 <% if (typeof modules !== 'undefined' && modules) { %>
                 <%- modules.map(module => `<li><a
                         href="${module.path}">${module.name} -
-                        ${module.version}</a></li>`).join(", ") %>
+                        ${module.version}</a>
+                    <!-- Little info logo, when hovered, show description -->
+                    <span class="info-logo"
+                        title="${module.description}">ℹ️</span>
+                </li>`).join(", ") %>
                 <% } else { %>
                 <li>No modules available</li>
                 <% } %>
             </ul>
         </div>
+
+        <script>
+            const infoLogos = document.querySelectorAll('.info-logo');
+            infoLogos.forEach(logo => {
+                logo.addEventListener('mouseover', () => {
+                    logo.style.cursor = 'pointer';
+                });
+            });
+        </script>
 
     </body>
 </html>
